@@ -1,0 +1,348 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .back-btn {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 8px 20px;
+            font-size: 0.9em;
+            font-weight: 650;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .back-btn:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .combined-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .combined-header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .combined-header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .month-tracks {
+            margin: 40px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .month-tracks:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        }
+
+        .month-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .month-title {
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        .month-date {
+            font-size: 1.1em;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .tracks-per-month {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .monthly-track {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid;
+            transition: all 0.3s ease;
+        }
+
+        .monthly-track:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .monthly-track.frontend {
+            border-left-color: #3498db;
+        }
+
+        .monthly-track.backend {
+            border-left-color: #2ecc71;
+        }
+
+        .monthly-track.aiml {
+            border-left-color: #e74c3c;
+        }
+
+        .monthly-track.data {
+            border-left-color: #f39c12;
+        }
+
+        .monthly-track.ideation {
+            border-left-color: #9b59b6;
+        }
+
+        .monthly-track h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .team {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .activities {
+            color: #555;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+
+        .completion-badge {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(39,174,96,0.3);
+            animation: celebration 2s infinite;
+        }
+
+        @keyframes celebration {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+
+        footer {
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        /* Compact Month 1 Styling */
+        .ideation-content {
+            padding: 25px 30px;
+            text-align: center;
+        }
+
+        .ideation-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #9b59b6;
+        }
+
+        .ideation-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #8e44ad;
+            margin-bottom: 15px;
+        }
+
+        .ideation-activities {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .activity-item {
+            background: white;
+            padding: 20px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            min-width: 160px;
+            transition: all 0.3s ease;
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .activity-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+
+        .activity-item h5 {
+            color: #9b59b6;
+            font-size: 1em;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .activity-item p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .ideation-team {
+            background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 968px) {
+            .combined-header h1 {
+                font-size: 2.2em;
+            }
+
+            .combined-header p {
+                font-size: 1.1em;
+            }
+
+            .month-tracks {
+                margin: 30px 20px;
+            }
+
+            .month-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .tracks-per-month {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .ideation-content {
+                padding: 20px 15px;
+            }
+
+            .ideation-activities {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .completion-badge {
+                font-size: 1.2em;
+                padding: 25px;
+                margin: 30px 20px;
+            }
+            
+            .back-btn {
+                top: 20px;
+                left: 20px;
+                padding: 6px 16px;
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .combined-header {
+                padding: 40px 20px;
+            }
+
+            .combined-header h1 {
+                font-size: 1.8em;
+            }
+
+            .month-title {
+                font-size: 1.3em;
+            }
+
+            .monthly-track {
+                padding: 20px;
+            }
+            
+            .ideation-content {
+                padding: 15px 10px;
+            }
+            
+            .ideation-icon {
+                font-size: 1.8em;
+            }
+            
+            .ideation-title {
+                font-size: 1.2em;
+            }
+            
+            .activity-item {
+                padding: 10px 15px;
+                min-width: 140px;
+            }
+            
+            .back-btn {
+                top: 15px;
+                left: 15px;
+            }
+        }
