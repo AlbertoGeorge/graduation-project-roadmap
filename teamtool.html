@@ -5,41 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Monitoring System - Track Overview</title>
     <link rel="stylesheet" href="css/teamtool.css">
-    
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>ExamGard System</h1>
-            <p>Track Overview with Tools</p>
+            <h1>ExamGuard System</h1>
+            <p>Track Overview with Tools and Detailed Explanations</p>
         </header>
 
-         <a href="index.html" class="back-btn">← Back to Dashboard</a>
-<!-- ................................................................................................................ -->
+        <a href="index.html" class="back-btn">← Back to Dashboard</a>
 
         <div class="tracks-grid">
+
+            <!-- Frontend Track -->
             <div class="track-card frontend">
                 <h3>📱 Frontend Development</h3>
                 <div class="team">Marwa + Demian</div>
-                <p>UI/UX Design and React Development</p>
-                
+                <p>UI/UX, Camera & Microphone Streaming, Real-time Dashboard & Graphs</p>
+
                 <div class="tools">
                     <span class="tool">Figma</span>
                     <span class="tool">React</span>
+                    <span class="tool">TypeScript</span>
                     <span class="tool">Vite</span>
                     <span class="tool">TailwindCSS</span>
-                    <span class="tool">React Router</span>
+                    <span class="tool">React Router (optional)</span>
                     <span class="tool">react-webcam</span>
+                    <span class="tool">WebRTC / Socket.io-client</span>
+                    <span class="tool">Chart.js / Recharts</span>
                     <span class="tool">Axios</span>
                 </div>
+
+                <div class="tools-description">
+                    <p><strong>Figma:</strong> Design mockups and UI prototypes.</p>
+                    <p><strong>React:</strong> Build interactive and dynamic user interfaces.</p>
+                    <p><strong>TypeScript:</strong> Adds static typing for safer and more maintainable code.</p>
+                    <p><strong>Vite:</strong> Fast build tool and development server for frontend projects.</p>
+                    <p><strong>TailwindCSS:</strong> Utility-first CSS framework for rapid styling.</p>
+                    <p><strong>React Router:</strong> Optional navigation for multi-page apps.</p>
+                    <p><strong>react-webcam:</strong> Access the webcam for real-time student monitoring.</p>
+                    <p><strong>WebRTC / Socket.io-client:</strong> Stream video/audio reliably to backend.</p>
+                    <p><strong>Chart.js / Recharts:</strong> Visualize attendance, alerts, or monitoring data.</p>
+                    <p><strong>Axios:</strong> HTTP client to communicate with backend APIs.</p>
+                </div>
             </div>
-<!-- ................................................................................................................ -->
-            
+
+            <!-- Backend Track -->
             <div class="track-card backend">
                 <h3>⚙️ Backend Development</h3>
                 <div class="team">Alberto + Sandy</div>
-                <p>Django API, Database, and MinIO Integration</p>
-                
+                <p>Authentication, API Endpoints, Media Storage, WebSockets, Session Management</p>
+
                 <div class="tools">
                     <span class="tool">Python</span>
                     <span class="tool">Django</span>
@@ -47,18 +63,34 @@
                     <span class="tool">PostgreSQL</span>
                     <span class="tool">MinIO</span>
                     <span class="tool">JWT</span>
-                    <span class="tool">Redis</span>
-                    <span class="tool">Postman</span>
+                    <span class="tool">RabbitMQ / Redis Streams</span>
+                    <span class="tool">Celery (optional)</span>
+                    <span class="tool">Django Channels</span>
+                    <span class="tool">Gunicorn / Uvicorn</span>
+                    <span class="tool">Nginx</span>
                 </div>
-                
-<!-- ................................................................................................................ -->
+
+                <div class="tools-description">
+                    <p><strong>Python:</strong> Core language for backend logic and AI integration.</p>
+                    <p><strong>Django:</strong> Web framework to build APIs and handle server logic.</p>
+                    <p><strong>Django REST Framework:</strong> Simplifies creation of RESTful APIs.</p>
+                    <p><strong>PostgreSQL:</strong> Store structured data like student info, exams, logs.</p>
+                    <p><strong>MinIO:</strong> Secure storage for videos, images, and large files.</p>
+                    <p><strong>JWT:</strong> JSON Web Tokens for secure authentication.</p>
+                    <p><strong>RabbitMQ / Redis Streams:</strong> Message broker for task queues and real-time events.</p>
+                    <p><strong>Celery:</strong> Optional task runner for background jobs.</p>
+                    <p><strong>Django Channels:</strong> Enable WebSocket support for real-time communication.</p>
+                    <p><strong>Gunicorn / Uvicorn:</strong> Production ASGI server to run Django/FastAPI apps.</p>
+                    <p><strong>Nginx:</strong> Reverse proxy and static/media file serving.</p>
+                </div>
             </div>
-            
+
+            <!-- AI/ML Track -->
             <div class="track-card aiml">
-                <h3>🤖 AI/ML Development</h3>
+                <h3>🤖 AI Proctoring & Analytics</h3>
                 <div class="team">Shrouk + Kirollos</div>
-                <p>Model Training, Optimization, and Detection System</p>
-                
+                <p>Face Recognition, Voice Analysis, Hand & Object Detection, Cheating Alerts</p>
+
                 <div class="tools">
                     <span class="tool">Python</span>
                     <span class="tool">PyTorch</span>
@@ -66,32 +98,65 @@
                     <span class="tool">OpenCV</span>
                     <span class="tool">CUDA</span>
                     <span class="tool">FastAPI</span>
+                    <span class="tool">ONNX Runtime (optional)</span>
                     <span class="tool">Roboflow</span>
+                    <span class="tool">Mediapipe</span>
                     <span class="tool">NumPy</span>
+                    <span class="tool">Whisper</span>
+                    <span class="tool">pyannote.audio</span>
+                    <span class="tool">Weaviate / Qdrant</span>
+                </div>
+
+                <div class="tools-description">
+                    <p><strong>Python:</strong> Core language for AI scripts and preprocessing.</p>
+                    <p><strong>PyTorch:</strong> Train and run deep learning models.</p>
+                    <p><strong>YOLOv8:</strong> Detect phones, books, or any prohibited objects in frames.</p>
+                    <p><strong>OpenCV:</strong> Process video frames and manipulate images.</p>
+                    <p><strong>CUDA:</strong> GPU acceleration for faster AI processing.</p>
+                    <p><strong>FastAPI:</strong> Serve AI models via REST endpoints for real-time inference.</p>
+                    <p><strong>ONNX Runtime:</strong> Optional for model optimization and acceleration.</p>
+                    <p><strong>Roboflow:</strong> Prepare datasets and train object detection models.</p>
+                    <p><strong>Mediapipe:</strong> Hand tracking to detect prohibited items.</p>
+                    <p><strong>NumPy:</strong> Handle numerical calculations for AI processing.</p>
+                    <p><strong>Whisper:</strong> Speech-to-text conversion for monitoring spoken answers.</p>
+                    <p><strong>pyannote.audio:</strong> Speaker diarisation to detect who is speaking.</p>
+                    <p><strong>Weaviate / Qdrant:</strong> Store vector embeddings of voices/faces for quick similarity search.</p>
                 </div>
             </div>
-<!-- ................................................................................................................ -->
 
+            <!-- Data & Infrastructure Track -->
             <div class="track-card data">
-                <h3>📊 Data Management</h3>
+                <h3>📊 Data & Infrastructure</h3>
                 <div class="team">Alberto</div>
-                <p>Backup Systems, Data Architecture, and Monitoring</p>
-                
+                <p>Deployment, Monitoring, Logging, Backup, and Data Pipelines</p>
+
                 <div class="tools">
-                    <span class="tool">PostgreSQL</span>
-                    <span class="tool">MinIO</span>
                     <span class="tool">Docker</span>
                     <span class="tool">Kubernetes</span>
+                    <span class="tool">PostgreSQL</span>
+                    <span class="tool">MinIO</span>
                     <span class="tool">Prometheus</span>
                     <span class="tool">Grafana</span>
-                    <span class="tool">Linux</span>
-                    <span class="tool">Bash</span>
+                    <span class="tool">GitHub Actions / GitLab CI</span>
+                    <span class="tool">Terraform</span>
+                    <span class="tool">Loki / ELK Stack</span>
                 </div>
+
+                <div class="tools-description">
+                    <p><strong>Docker:</strong> Containerize services for isolated and consistent deployment.</p>
+                    <p><strong>Kubernetes:</strong> Orchestrate containers, manage scaling and load balancing.</p>
+                    <p><strong>PostgreSQL:</strong> Store structured backups and exam logs.</p>
+                    <p><strong>MinIO:</strong> Store large media files such as exam videos.</p>
+                    <p><strong>Prometheus:</strong> Monitor system performance metrics.</p>
+                    <p><strong>Grafana:</strong> Display dashboards for system health and AI alerts.</p>
+                    <p><strong>GitHub Actions / GitLab CI:</strong> CI/CD pipelines for automated testing and deployment.</p>
+                    <p><strong>Terraform:</strong> Manage infrastructure as code for reproducible environments.</p>
+                    <p><strong>Loki / ELK Stack:</strong> Logging and visualization of system events and errors.</p>
                 </div>
-<!-- ................................................................................................................ -->
-    
-        <footer>
-        </footer>
+            </div>
+
+        </div>
+        <footer></footer>
+    </div>
 </body>
 </html>
-
